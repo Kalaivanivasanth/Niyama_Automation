@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Suite">
+
+<listeners>
+<listener class-name="testScripts.Listeners"></listener>
+</listeners>
+  <test name="Test1">
+    <classes>
+    <class name="testScripts.CommonFunctions"></class>
+    <class name="testScripts.Register_Self_B2C"></class>
+    
+      <!--<class name="testScripts.SelfAssessment_Adolescent_BeforeLogin"></class>-->
+      <!--  <class name="testScripts.DepAnxiety_Adult_Beforelogin"></class> -->
+       <!--<class name="testScripts.Assessment_Completion"></class>-->
+       <class name="testScripts.Login_Patient"/>
+       <class name="testScripts.ProfileList"/>
+       <!--<class name="testScripts.IHI_Patient_MandatoryOnly"></class> -->
+       <!--<class name="testScripts.SelfAssessment_Adolescent_Result"></class>-->
+     
+    </classes>
+  </test>   <!-- Test -->
+</suite> <!-- Suite -->
